@@ -1,0 +1,58 @@
+<article (click)="show()">
+    <table>
+        <tbody>
+            <tr>
+                <td><b>Cód. de tarifas:</b></td>
+                <td>{{tarifa_object.tarifa_id}}</td>
+            </tr>
+            <tr>
+                <td class="divide" colspan="2"><b>Opciones</b></td>
+            </tr>
+            <tr>
+                <td><b>Línea Naviera:</b></td>
+                <td>{{tarifa_object.linea_naviera_nombre}}</td>
+            </tr>
+            <tr>
+                <td><b>Retorno:</b></td>
+                <td>{{tarifa_object.empresa_direccion_puerto_nombre}}</td>
+            </tr>
+            <tr>
+                <td><b>Puerto:</b></td>
+                <td>{{tarifa_object.empresa_direccion_puerto_nombre}}</td>
+            </tr>
+            <tr *ngFor="let item of tarifa_object.opciones">
+                <td><b>{{item.opcion}}:</b></td>
+                <td>{{item.seleccion}}</td>
+            </tr>
+            <tr>
+                <td><b>% CIF:</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>Monto Minimo CIF:</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>Conceptos</b></td>
+                <ul>
+                    <li *ngFor="let item of tarifa_object.tipo_gastos">
+                        {{item.tipo_gasto}}
+                    </li>
+                </ul>
+                
+            </tr>
+            <tr>
+                <td colspan="2" class="divide"><b>Condiciones</b></td>
+            </tr>
+            
+            <tr *ngFor="let item of tarifa_object.condiciones">
+                <td><b>{{item.condicion}}:</b></td>
+                <td>{{item.descripcion}}</td>
+            </tr>
+
+            
+            
+        </tbody>
+    </table>
+</article>
+
