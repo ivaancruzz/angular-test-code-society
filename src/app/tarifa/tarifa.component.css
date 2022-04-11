@@ -1,0 +1,31 @@
+article{
+    border: 1px solid red;
+    border-radius: 20px;
+    width: auto;
+    height: 90vh;
+    cursor: pointer;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+article:hover{
+    box-shadow: 2px 5px 15px rgb(148, 148, 148);
+}
+
+table{
+    border-spacing: 10px;
+    font-size: 0.9rem;
+    height: 100%;
+    
+    
+}
+
+ul{
+    padding: 10px;
+}
+
+.divide{
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+

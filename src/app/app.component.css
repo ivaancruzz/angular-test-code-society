@@ -1,0 +1,7 @@
+main{
+    display: inline-grid;
+    grid-template-columns: 450px;
+    grid-auto-columns: 75px;
+    grid-auto-flow: column;
+}
+
